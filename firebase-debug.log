@@ -1,0 +1,150 @@
+[debug] [2023-07-16T20:26:10.645Z] ----------------------------------------------------------------------
+[debug] [2023-07-16T20:26:10.650Z] Command:       /Users/loictorres/.nvm/versions/node/v20.4.0/bin/node /Users/loictorres/.nvm/versions/node/v20.4.0/bin/firebase deploy
+[debug] [2023-07-16T20:26:10.650Z] CLI Version:   12.4.4
+[debug] [2023-07-16T20:26:10.650Z] Platform:      darwin
+[debug] [2023-07-16T20:26:10.650Z] Node Version:  v20.4.0
+[debug] [2023-07-16T20:26:10.650Z] Time:          Sun Jul 16 2023 22:26:10 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-07-16T20:26:10.650Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-16T20:26:10.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-16T20:26:10.685Z] > authorizing via signed-in user (loic.torresg@gmail.com)
+[debug] [2023-07-16T20:26:10.685Z] [iam] checking project fir-issue-1a559 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-16T20:26:10.686Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions [none]
+[debug] [2023-07-16T20:26:10.686Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions x-goog-quota-user=projects/fir-issue-1a559
+[debug] [2023-07-16T20:26:10.686Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-16T20:26:11.344Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions 200
+[debug] [2023-07-16T20:26:11.344Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-16T20:26:11.345Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-issue-1a559 [none]
+[debug] [2023-07-16T20:26:11.603Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-issue-1a559 200
+[debug] [2023-07-16T20:26:11.604Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-issue-1a559 {"projectId":"fir-issue-1a559","projectNumber":"283278407580","displayName":"firebase-issue","name":"projects/fir-issue-1a559","resources":{"hostingSite":"fir-issue-1a559"},"state":"ACTIVE","etag":"1_66b07cbc-0431-47d2-88e0-e7aca965b2a9"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/4)
+
+[info] - info Generating static pages (1/4)
+
+[info] - info Generating static pages (2/4)
+
+[info] - info Generating static pages (3/4)
+
+[info] - info Generating static pages (4/4)
+
+[info] - info Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+┌ ○ /                                      4.92 kB        82.4 kB
+└ ○ /favicon.ico                           0 B                0 B
++ First Load JS shared by all              77.5 kB
+  ├ chunks/43e2ea16-9531e6ae7a6ea89d.js    50.5 kB
+  ├ chunks/783-76c4f6565d5676e6.js         25.1 kB
+  ├ chunks/main-app-edf36f7100bb6351.js    210 B
+  └ chunks/webpack-76fd8b39fe914c29.js     1.65 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   182 B          75.5 kB
++ First Load JS shared by all              75.3 kB
+  ├ chunks/framework-510ec8ffd65e1d01.js   45 kB
+  ├ chunks/main-c65570355d71a9c0.js        28.4 kB
+  ├ chunks/pages/_app-c4c131a3a3a69845.js  195 B
+  └ chunks/webpack-76fd8b39fe914c29.js     1.65 kB
+
+
+[info] ○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[debug] [2023-07-16T20:26:32.197Z] Error: ENOENT: no such file or directory, open '/Users/loictorres/Desktop/firebase-issue/.next/server/client-reference-manifest.js'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-16T20:26:41.181Z] ----------------------------------------------------------------------
+[debug] [2023-07-16T20:26:41.182Z] Command:       /Users/loictorres/.nvm/versions/node/v20.4.0/bin/node /Users/loictorres/.nvm/versions/node/v20.4.0/bin/firebase deploy --debug
+[debug] [2023-07-16T20:26:41.182Z] CLI Version:   12.4.4
+[debug] [2023-07-16T20:26:41.182Z] Platform:      darwin
+[debug] [2023-07-16T20:26:41.183Z] Node Version:  v20.4.0
+[debug] [2023-07-16T20:26:41.183Z] Time:          Sun Jul 16 2023 22:26:41 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-07-16T20:26:41.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-16T20:26:41.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-16T20:26:41.217Z] > authorizing via signed-in user (loic.torresg@gmail.com)
+[debug] [2023-07-16T20:26:41.218Z] [iam] checking project fir-issue-1a559 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-16T20:26:41.218Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions [none]
+[debug] [2023-07-16T20:26:41.219Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions x-goog-quota-user=projects/fir-issue-1a559
+[debug] [2023-07-16T20:26:41.219Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-16T20:26:41.921Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions 200
+[debug] [2023-07-16T20:26:41.921Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-issue-1a559:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-16T20:26:41.922Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-issue-1a559 [none]
+[debug] [2023-07-16T20:26:42.222Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-issue-1a559 200
+[debug] [2023-07-16T20:26:42.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-issue-1a559 {"projectId":"fir-issue-1a559","projectNumber":"283278407580","displayName":"firebase-issue","name":"projects/fir-issue-1a559","resources":{"hostingSite":"fir-issue-1a559"},"state":"ACTIVE","etag":"1_66b07cbc-0431-47d2-88e0-e7aca965b2a9"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/4)
+
+[info] - info Generating static pages (1/4)
+
+[info] - info Generating static pages (2/4)
+
+[info] - info Generating static pages (3/4)
+
+[info] - info Generating static pages (4/4)
+
+[info] - info Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+┌ ○ /                                      4.92 kB        82.4 kB
+└ ○ /favicon.ico                           0 B                0 B
++ First Load JS shared by all              77.5 kB
+  ├ chunks/43e2ea16-9531e6ae7a6ea89d.js    50.5 kB
+  ├ chunks/783-76c4f6565d5676e6.js         25.1 kB
+  ├ chunks/main-app-d2391eb64f0f5e96.js    212 B
+  └ chunks/webpack-76fd8b39fe914c29.js     1.65 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   182 B          75.5 kB
++ First Load JS shared by all              75.3 kB
+  ├ chunks/framework-510ec8ffd65e1d01.js   45 kB
+  ├ chunks/main-c65570355d71a9c0.js        28.4 kB
+  ├ chunks/pages/_app-c4c131a3a3a69845.js  195 B
+  └ chunks/webpack-76fd8b39fe914c29.js     1.65 kB
+
+
+[info] ○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[debug] [2023-07-16T20:27:00.680Z] Error: ENOENT: no such file or directory, open '/Users/loictorres/Desktop/firebase-issue/.next/server/client-reference-manifest.js'
+[error] 
+[error] Error: An unexpected error has occurred.
